@@ -15,11 +15,19 @@ $ ./install.sh
 
 ## Create token.pickle
 1. Following [Python Quickstart](https://developers.google.com/drive/api/v3/quickstart/python), create credentials.json and put it into config dir.
-1. Execute quickstart.py (I changed SCOPES to download files): ` $ python quickstart.py ` and put token.pickle into config dir.
+1. Execute quickstart.py (I changed SCOPES to download files): 
+``` sh
+$ python quickstart.py 
+```
+and put token.pickle into config dir.
 
 ## Download files
 1. Create your own yaml file in config, seeing config/sample.yaml. If you want to add params, you can modify config/defaults.py.
-1. Execute download.py: ` $ python download.py ` and you'll find the file in files dir.
+1. Execute download.py: 
+``` sh
+$ python download.py --cfg_file ./config/your_own.yaml
+``` 
+and you'll find the file in files dir.
 
 ## Sample Tree
 ```sh
